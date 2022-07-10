@@ -1,6 +1,11 @@
 import { Effect, EffectConstructor } from "$common/Effect";
 import { PersonalEffects } from "$common/Effects";
 
+/**
+ * Special effect that is used to choose random effect for a given player on their client side.
+ * It is hidden and only the effect that is chosen is visible.
+ * Only personal effects are selected to not affect other players too much.
+ */
 export class IndividualEffect extends Effect {
   readonly effectName = "_individual";
   readonly type = "global";

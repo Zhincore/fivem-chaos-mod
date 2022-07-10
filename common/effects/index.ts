@@ -18,7 +18,7 @@ export const Effects: Record<string, EffectConstructor> = Object.assign(
   MiscEffects,
   PlayerEffects,
   PedsEffects,
-  IndividualEffect,
+  IndividualEffect
 );
 
 export const [GlobalEffects, PersonalEffects] = (() => {

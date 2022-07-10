@@ -1,6 +1,7 @@
 import { Effect } from "$common/Effect";
 import { sleep } from "$common/utils";
 
+// https://github.com/gta-chaos-mod/ChaosModV/blob/master/ChaosMod/Effects/db/Player/PlayerLaunchUp.cpp
 export class LaunchUpEffect extends Effect {
   readonly effectName = "Launch player up";
   readonly type = "personal";

@@ -1,5 +1,6 @@
 import { Effect } from "$common/Effect";
 
+// https://github.com/gta-chaos-mod/ChaosModV/blob/master/ChaosMod/Effects/db/Player/PlayerIgnitePlayer.cpp
 export class IgniteEffect extends Effect {
   readonly effectName = "Ignite player";
   readonly type = "personal";

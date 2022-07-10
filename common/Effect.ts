@@ -13,7 +13,7 @@ export abstract class Effect implements IEffectInfo {
   abstract readonly effectName: string;
   /** Whether this affects the player or the whole world */
   abstract readonly type: EffectType;
-  /** Whether this effects ends after duration */
+  /** Whether this effect ends after duration */
   readonly isTimed: boolean = false;
   /** Whether this effect should be hidden from display */
   readonly isHidden: boolean = false;

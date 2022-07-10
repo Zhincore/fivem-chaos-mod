@@ -1,5 +1,6 @@
 import { Effect } from "$common/Effect";
 
+// https://github.com/gta-chaos-mod/ChaosModV/blob/master/ChaosMod/Effects/db/Player/PlayerClone.cpp
 export class CloneEffect extends Effect {
   readonly effectName = "Clone player";
   readonly type = "personal";
@@ -8,7 +9,7 @@ export class CloneEffect extends Effect {
     const friendly = Math.random() < 0.5;
 
     const [_, relationshipGroup] = AddRelationshipGroup(
-      friendly ? "_COMPANION_CLONE_FRIENDLY" : "_COMPANION_CLONE_HOSTILE",
+      friendly ? "_COMPANION_CLONE_FRIENDLY" : "_COMPANION_CLONE_HOSTILE"
     );
     SetRelationshipBetweenGroups(friendly ? 0 : 5, relationshipGroup, GetHashKey("PLAYER"));
     SetRelationshipBetweenGroups(friendly ? 0 : 5, GetHashKey("PLAYER"), relationshipGroup);

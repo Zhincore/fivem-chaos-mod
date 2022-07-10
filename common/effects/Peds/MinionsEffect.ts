@@ -1,5 +1,6 @@
 import { Effect } from "$common/Effect";
 
+// https://github.com/gta-chaos-mod/ChaosModV/blob/master/ChaosMod/Effects/db/Peds/PedsMinions.cpp
 export class MinionsEffect extends Effect {
   readonly effectName = "Minions";
   readonly type = "global";
