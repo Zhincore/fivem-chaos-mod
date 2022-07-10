@@ -1,0 +1,21 @@
+{
+  "name": "fivem-chaos-mod",
+  "version": "1.0.0",
+  "author": "Zhincore",
+  "license": "GPL-3.0-or-later",
+  "private": true,
+  "scripts": {
+    "build": "node build.js --mode=production",
+    "watch": "node build.js"
+  },
+  "devDependencies": {
+    "@citizenfx/client": "latest",
+    "@citizenfx/server": "latest",
+    "@types/node": "^16.3.1",
+    "esbuild": "^0.14.10"
+  },
+  "dependencies": {
+    "eventemitter3": "^4.0.7",
+    "preact": "^10.8.2"
+  }
+}
